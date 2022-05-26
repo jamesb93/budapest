@@ -18,14 +18,10 @@
     onMount(async () => {
         ready = true;
         source.src = `/sounds/sound-${id}.mp3`;
-        audio.load();
+        // audio.load();
     })
-
-    function loadAudio() {
-        audio.load()
-    }
-
     function toggleAudio() {
+        audio.muted = false;
         if (!initLoad) {
             audio.load();
             initLoad = true
@@ -48,7 +44,7 @@
     <!-- {#if !loaded} -->
     <!-- <button id='start-button' on:click={loadAudio}>load audio</button> -->
     <!-- {/if} -->
-    {#if loaded}
+    {#if ready}
     <button id='start-button' on:click={handleClick}>
         {#if paused}
         play

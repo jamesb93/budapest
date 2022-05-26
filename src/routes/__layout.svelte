@@ -16,7 +16,6 @@
     .container {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;

@@ -36,7 +36,10 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        max-width: 80%;
         gap: 15px;
+        text-align: center;
+        justify-content: center
     }
 
     #error {
@@ -63,7 +66,6 @@
         border-radius: 10px;
         border:1px solid #cccccc;
         border-width: 1px;
-        width: 100%;
     }
 
     input:focus {
